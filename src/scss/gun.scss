@@ -1,0 +1,54 @@
+.gun{
+    background: black;
+    position: relative;
+    padding: 0 0 120px;
+    &-slider{
+        width: 700px;
+        margin: 0 auto;
+        background: url('../image/gun/border.png') center/cover;
+        padding: 20px 65px;
+        border-radius: 0 50px 0 0;
+    }
+    & .owl-item{       
+        & img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    & #owl-demo {
+        position: relative;
+    }
+    
+    
+    /* Styling Pagination*/
+    & .owl-dots {
+        position: absolute;
+    display: flex;
+    bottom: -160px;
+    left: -65px;
+    z-index: 2;
+    }
+    
+    & .owl-dot {
+        display: block;
+        margin-right: 10px;
+        border: 2px solid #444;
+        padding: 3px;
+        zoom: 2;
+        width: 100px;
+        height: 80px;
+        object-fit: cover;
+        top: 50%;
+        & img{
+            width: 100%;
+        }
+    }
+    
+    & .owl-dot.active {
+        border: 2px solid rgb(248, 0, 0);
+    }
+    & .link-navi {
+        color: inherit;
+        text-decoration: none;
+    }
+}
